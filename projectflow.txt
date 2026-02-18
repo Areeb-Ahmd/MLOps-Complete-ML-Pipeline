@@ -26,9 +26,16 @@ Expermients with DVC:
 
 -------------------------------------------------------------------------------
 
+
+
+
+
+
+-------------------------------------------------------------------------------
 params.yaml setup:
-1> import yaml
-2> add func:
+-------------------------------------------------------------------------------
+1> import yaml into all the components files.
+2> add func: (into all the components files.)
 def load_params(params_path: str) -> dict:
     """Load parameters from a YAML file."""
     try:
@@ -59,10 +66,8 @@ max_features = params['feature_engineering']['max_features']
 params = load_params('params.yaml')['model_building']
 
 -------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------
-
 dvclive code block:
+-------------------------------------------------------------------------------
 1> import dvclive and yaml:
 from dvclive import Live
 import yaml
